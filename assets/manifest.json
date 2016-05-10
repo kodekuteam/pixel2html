@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "main.min.js": {
+      "files": [
+        "scripts/main.js"
+      ],
+      "main": true
+    },
+    "main.min.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "parsley.js":{
+      "bower": ["parsleyjs"]
+    }
+  },
+  "config": {
+    "devUrl": "http://localhost/frontend-test/"
+  }
+}

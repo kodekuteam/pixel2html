@@ -1,0 +1,63 @@
+::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder{
+    color:$placeholder;
+}
+form{
+    padding-top: 15px;
+}
+.form-group{
+    margin-bottom: 25px;
+    &.double-field{
+        .form-control[name="password"]{
+            border-bottom-left-radius:0;
+            -webkit-border-bottom-left-radius:0;
+            -mozborder-bottom-left-radius:0;
+            border-bottom-right-radius:0;
+            -webkit-border-bottom-right-radius:0;
+            -mozborder-bottom-right-radius:0;
+        }
+        .form-control[name="repassword"]{
+            border-top-left-radius:0;
+            -webkit-border-top-left-radius:0;
+            -mozborder-top-left-radius:0;
+            border-top-right-radius:0;
+            -webkit-border-top-right-radius:0;
+            -mozborder-top-right-radius:0;
+            border-top:0;
+        }
+        &.parsley-error{
+            .form-control[name="repassword"]{
+                border-top:1px solid $error;
+            }
+        }
+    }
+    .form-control{
+        border-color:$grey;
+        font-weight:100;
+        box-shadow:none;
+        -webkit-box-shadow:none;
+        -moz-box-shadow:none;
+        height: auto;
+        font-size: 16px;
+        padding: 11px 15px;
+        &.parsley-error{
+            border-color:$error;
+        }
+        &:active,&:focus{
+            background:#fcfcfc;
+        }
+    }
+    label{
+        margin-bottom:10px;
+    }
+}
+.parsley-errors-list{
+    list-style: none;
+    padding: 0;
+    display:none;
+    font-size:14px;
+    margin: 0 0 10px;
+    &.filled{
+        color:$error;
+        display:block;
+    }
+}

@@ -1,0 +1,99 @@
+body{
+	background:$bggrey;
+	font-family:$lato;
+	font-size:16px;
+	color:$primary;
+	font-weight:200;
+	@media(max-width:991px){
+		background:#f9f9f9;
+	}
+}
+*:hover, *:focus{outline:none !important;}
+
+h1, h2, h3, h4, h5, h6, label{
+	font-family: $montserrat;
+	font-weight:400;
+	color:$black;
+}
+ 
+.screen-mode{
+	padding:50px;
+	h1{
+		font-size:32px;
+		margin-top:0;
+	}
+	p{
+		font-size:22px;
+	}
+}
+.form-wrapper{
+	max-width:720px;
+	background:$white;
+	margin:30px auto;
+	border: 1px solid #d4d8df;
+	border-radius: 8px;
+    box-shadow: 2px 0 3px 0 hsla(180,3%,92%,.45);
+	.form-content{
+		padding:20px 125px 55px 123px;
+		.checkinput{
+			font-family:$lato;
+			color:#8890a4;
+			font-weight:200;
+			padding: 12px 0;
+			input[type=checkbox]{
+				width:15px;
+				height:15px;
+				position:absolute;
+			}
+			span{
+				font-family:$lato;
+				padding-left: 25px;
+			}
+			a{
+				color:$blue;
+			}
+			@media(max-width:992px){
+				margin: 0 0 25px;
+			    text-align: center;
+			    display: block;
+			}
+		}
+		@media(max-width:991px){
+			padding:20px 25px 55px 25px;
+		}
+	}
+	.form-header{
+		padding:40px 125px 27px 123px;
+		text-align:center;
+		border-bottom:1px solid $grey;
+		h1{
+			font-size: 18px;
+    		margin-top: 29px;
+    		margin-bottom: 4px;
+		}
+		@media(max-width:991px){
+			padding:40px 25px 27px 25px;
+		}
+	}
+	@media(max-width:991px){
+		border: 0; 
+    	box-shadow: none;
+    	max-width:320px;		
+    }
+}
+
+.hidden-md-down{
+	@media(min-width:992px){
+		display:none;
+	}
+}
+
+.hidden-md-up{
+	@media(max-width:991px){
+		display:none;
+	}
+}
+
+.text-center{
+	text-align:center;
+}

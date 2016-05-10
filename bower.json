@@ -1,0 +1,24 @@
+{
+  "name": "frontend-test",
+  "description": "Pixel2Html Frontend Test",
+  "authors": [
+    "Kodeku.net"
+  ],
+  "license": "MIT",
+  "private" : true,
+  "homepage": "http://localhost",
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "bootstrap": "^3.3.6",
+    "parsleyjs": "^2.3.11",
+    "wow": "^1.1.2"    
+  },
+  "overrides":{
+    "bootstrap":{
+      "main":[
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css"
+      ]
+    }
+  }
+}
